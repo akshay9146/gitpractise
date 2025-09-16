@@ -3,19 +3,41 @@
 // import Toggle from './uncontrolledComponents/Toggle'
 
 import { useState } from "react"
-import User from "./lifting state up/User";
+// import User from "./lifting state up/User";
 import Child from "./lifting state up/Child";
 import ObjectState from "./updating object and array/ObjectState";
 import Form from "./forms/Form";
+import Navbar from "./reactrouter/Navbar";
+import {Routes,Route} from 'react-router-dom'
+import Home from "./reactrouter/components/Home";
+import Login from "./reactrouter/components/Login";
+import College from "./reactrouter/components/College";
+import Student from "./reactrouter/components/Student";
+import Department from "./reactrouter/components/Department";
+import User from "./reactrouter/components/User";
+import UserList from "./reactrouter/components/userList";
 
 function App() {
-  const [count,setCount]=useState(0);
+  // const [count,setCount]=useState(0);
   return (
     <>
-    <Child count={count}/>
+<Navbar/>
+<Routes>
+  <Route path="/" element={<Home/>}/>
+  <Route path="/login" element={<Login/>}/>
+  <Route path="/user" element={<User/>}/>
+   <Route path="/user/:id" element={<UserList/>}/>
+  <Route path="/college" element={<College/>}>
+   <Route path="student" element={<Student/>}/>
+    <Route index element={<Department/>}/>
+  </Route>
+   <Route path="/*" element={<h1>404</h1>}/>
+</Routes>
+
+    {/* <Child count={count}/> */}
 <br/>
-    <User setCount={setCount}/><br/>
-    <Form/>
+    {/* <User setCount={setCount}/><br/>
+    <Form/> */}
     
    {/* <h2 className="text-sm text-center font-light text-red-200 bg-pink-600 p-4 mx-160">hello react 1</h2>
    <div className='flex flex-col-reverse justify-start items-center grow'>
@@ -28,7 +50,7 @@ function App() {
       <br/> */}
       <hr/>
       {/* <Card/> */}
- <ObjectState/>
+ {/* <ObjectState/> */}
 {/* <Toggle/> */}
     </>
   )
