@@ -2,7 +2,7 @@
 // import ObjectState from './ObjectState'
 // import Toggle from './uncontrolledComponents/Toggle'
 
-import { useState } from "react"
+import { lazy, Suspense, useState } from "react"
 // import User from "./lifting state up/User";
 import Child from "./lifting state up/Child";
 import ObjectState from "./updating object and array/ObjectState";
@@ -16,12 +16,18 @@ import Student from "./reactrouter/components/Student";
 import Department from "./reactrouter/components/Department";
 import User from "./reactrouter/components/User";
 import UserList from "./reactrouter/components/userList";
+// import Userr from "./lazyloading/Userr";
+const Userr=lazy(()=>import('./lazyloading/Userr'))
 
 function App() {
-  // const [count,setCount]=useState(0);
+  const [load,setCount]=useState(false);
   return (
     <>
 <Navbar/>
+<br/>
+<button className="bg-pink-200 b-2" onClick={()=>setCount(!load)}>load data</button>
+<br/>
+{load?<Suspense fallback={<h2>loading the page</h2>}><Userr/></Suspense>:null}
 <Routes>
   <Route path="/" element={<Home/>}/>
   <Route path="/login" element={<Login/>}/>
