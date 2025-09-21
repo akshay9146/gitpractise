@@ -9,13 +9,13 @@
 // import Form from "./forms/Form";
 import Navbar from "./reactrouter/Navbar";
 // import {Routes,Route} from 'react-router-dom'
-import Home from "./reactrouter/components/Home";
-import Login from "./reactrouter/components/Login";
-import College from "./reactrouter/components/College";
-import Student from "./reactrouter/components/Student";
-import Department from "./reactrouter/components/Department";
-import User from "./reactrouter/components/User";
-import UserList from "./reactrouter/components/userList";
+// import Home from "./reactrouter/components/Home";
+// import Login from "./reactrouter/components/Login";
+// import College from "./reactrouter/components/College";
+// import Student from "./reactrouter/components/Student";
+// import Department from "./reactrouter/components/Department";
+// import User from "./reactrouter/components/User";
+// import UserList from "./reactrouter/components/userList";
 import { Suspense,lazy } from "react";
 import Cart from "./shopingcart/Cart";
 import { Routes,Route } from "react-router-dom";
