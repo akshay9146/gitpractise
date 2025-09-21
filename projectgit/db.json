@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "iPhone 15",
+      "price": 999,
+      "images": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": 2,
+      "title": "Samsung S23",
+      "price": 899,
+      "images": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": 3,
+      "title": "oppo 8",
+      "price": 799,
+      "images": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": 4,
+      "title": "moto 8",
+      "price": 919,
+      "images": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": 5,
+      "title": "apple 17",
+      "price": 739,
+      "images": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": 6,
+      "title": "micromax",
+      "price": 979,
+      "images": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": 7,
+      "title": "lumia 400",
+      "price": 1039,
+      "images": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": 8,
+      "title": "lava",
+      "price": 919,
+      "images": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": 9,
+      "title": "karbon",
+      "price": 899,
+      "images": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    }
+  ]
+}
